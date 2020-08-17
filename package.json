@@ -11,15 +11,22 @@
     "build:multi": "webpack --mode production --config ./multi-entry-poins/webpack.config.js",
     "build:css": "webpack --mode production --config ./css-style-loader/webpack.config.js ",
     "build:plugins": "webpack --mode production --config ./plugins/webpack.config.js ",
-    "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js "
+    "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js ",
+    "build:babel": "webpack-dev-server --config ./babel/webpack.config.js "
   },
   "keywords": [
     "webpack"
   ],
   "author": "Angel Santillan",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "7.4.5"
+  },
   "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-transform-runtime": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "babel-loader": "8.0.6",
     "css-loader": "2.1.1",
     "html-webpack-plugin": "3.2.0",
     "mini-css-extract-plugin": "0.7.0",

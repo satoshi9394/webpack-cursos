@@ -11,3 +11,11 @@ body {
   text-shadow: 1px 1px 1px black;
 }
 
+button{
+  background-color: steelblue;
+  border-radius: 20px;
+  color: azure;
+  width: fit-content;
+  box-shadow: azure;
+}
+
